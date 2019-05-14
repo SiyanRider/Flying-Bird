@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-
+//Ce script sert à gerer le score ainsi que toutes les fonctionalités qui y sont liées, à savoir : le nombre de piques qui spawn
+//ainsi que le l'affichage du texte du score
 public class score : MonoBehaviour
 {
     private Rigidbody2D joueur;
-    public int scoreJoueur, nb_spikes;
+    private int scoreJoueur, nb_spikes;
     public Text scoreAfficher;
     public GameObject rnd_spikes;
     // Start is called before the first frame update
@@ -36,7 +37,7 @@ public class score : MonoBehaviour
         {
             for (int i = 0; i < nb_spikes; i++)
             {
-                Instantiate(rnd_spikes, new Vector3(-7.11f, UnityEngine.Random.Range(-3.7f, 3.8f), 0), Quaternion.Euler(0, 0, -90));
+                Destroy(Instantiate(rnd_spikes, new Vector3(-7.11f, UnityEngine.Random.Range(-3.7f, 3.8f), 0), Quaternion.Euler(0, 0, -90)),5);
             }
         }
         if (bang.gameObject.name == "ghost_object_gauche")
@@ -44,7 +45,7 @@ public class score : MonoBehaviour
         {
             for (int i = 0; i < nb_spikes; i++)
             {
-                Instantiate(rnd_spikes, new Vector3(7.114f, UnityEngine.Random.Range(-3.7f, 3.8f), 0), Quaternion.Euler(0, 0, 90));
+                Destroy(Instantiate(rnd_spikes, new Vector3(7.114f, UnityEngine.Random.Range(-3.7f, 3.8f), 0), Quaternion.Euler(0, 0, 90)),5);
             }
         }
 
@@ -53,27 +54,27 @@ public class score : MonoBehaviour
     {
         if (scoreJoueur < 3)
         {
-            nb_spikes = 2;
+            nb_spikes = 1;
         }
         else if (scoreJoueur < 5)
         {
-            nb_spikes = 3;
+            nb_spikes = 2;
         }
-        else if (scoreJoueur < 7)
+        else if (scoreJoueur < 8)
         {
-            nb_spikes = 5;
+            nb_spikes = 3;
         }
         else if (scoreJoueur < 15)
         {
-            nb_spikes = 6;
+            nb_spikes = 4;
         }
         else if (scoreJoueur < 20)
         {
-            nb_spikes = 7;
+            nb_spikes = 5;
         }
         else
         {
-            nb_spikes = 10;
+            nb_spikes = 6;
         }
         return nb_spikes;
     }

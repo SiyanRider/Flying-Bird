@@ -67,7 +67,6 @@
     <Compile Include="Assets\controles.cs" />
     <Compile Include="Assets\duplication_spikes.cs" />
     <Compile Include="Assets\game_over.cs" />
-    <Compile Include="Assets\randomspikes.cs" />
     <Compile Include="Assets\score.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Documents/Flying_Bird/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
