@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-//Ce script sert à gerer le score ainsi que toutes les fonctionalités qui y sont liées, à savoir : le nombre de piques qui spawn
-//ainsi que le l'affichage du texte du score
+
+/* Auteur : Yanis PETIT
+ * Date : 2/05/2019
+Ce script sert à gerer le score ainsi que toutes les fonctionalités qui y sont liées, à savoir : le nombre de piques qui spawn
+ainsi que le l'affichage du texte du score
+
+    */
 public class score : MonoBehaviour
 {
     private Rigidbody2D joueur;

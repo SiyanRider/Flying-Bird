@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*Auteur : Yanis PETIT
+ * Date : 30/04/2019
+ * Ce script Unity sert à instancier les piques qui se situent en haut et en bas de la caméra.
+ * */
 public class duplication_spikes : MonoBehaviour
 {
     public GameObject spikes;

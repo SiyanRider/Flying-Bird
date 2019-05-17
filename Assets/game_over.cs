@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Threading.Tasks;
-
+/*Auteur : Yanis PETIT
+ * Date : 31/04/2019
+ * Ce script Unity sert à gerer chaque fin de partie, lorsque le joueur entre en colision avec un pique.*/ 
 public class game_over : MonoBehaviour
 {
     public Text gameOverText, retry;

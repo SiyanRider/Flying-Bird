@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*Auteur : Yanis PETIT
+ * Date : 30/04/2019
+ * Ce script Unity sert à gerer les controles du joueur et à inversser les direction vers laquelle il est attiré (à droite suite à
+ * une colision à gauche...)
+ * */
 public class controles : MonoBehaviour
 {
     private Rigidbody2D joueur;
